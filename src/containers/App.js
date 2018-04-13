@@ -38,6 +38,7 @@ class App extends React.Component {
     return (
       <div className={style.TodoApp}>
         <Title title='Tytuł aplikacji' length={this.state.data.length} />
+        <TodoList list={this.state.data} />
       </div>
     );
   }
